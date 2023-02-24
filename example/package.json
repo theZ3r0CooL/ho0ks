@@ -1,0 +1,32 @@
+{
+  "name": "ho0ks-example",
+  "version": "0.0.0",
+  "author": "theZ3r0CooL (https://github.com/sponsors/theZ3r0CooL)",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "private": true,
+  "dependencies": {
+    "react": "file:../node_modules/react",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "ho0ks": "file:.."
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "https://theZ3r0CooL.github.io/ho0ks/example#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

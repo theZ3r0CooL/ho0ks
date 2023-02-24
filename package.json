@@ -1,0 +1,74 @@
+{
+  "name": "ho0ks",
+  "version": "1.0.0",
+  "description": "A Library of useful React Hooks written in TypeScript.",
+  "author": "theZ3r0CooL (https://github.com/sponsors/theZ3r0CooL)",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/runtime": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@rollup/plugin-url": "^8.0.1",
+    "@svgr/webpack": "^6.5.1",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.28",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "rollup": "^3.17.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
+  },
+  "scripts": {
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "build": "rollup -c && tsc -d --emitDeclarationOnly --noEmit false --declarationDir dist",
+    "start": "rollup -c -w",
+    "prepare": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theZ3r0CooL/ho0ks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theZ3r0CooL/ho0ks/issues"
+  },
+  "homepage": "https://github.com/theZ3r0CooL/ho0ks#readme",
+  "keywords": [
+    "React",
+    "Hooks",
+    "TypeScript",
+    "TS",
+    "Library"
+  ]
+}

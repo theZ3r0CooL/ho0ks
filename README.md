@@ -1,2 +1,42 @@
 # ho0ks
- A Library of useful React Hooks written in TypeScript.
+
+> A Library of useful React Hooks written in TypeScript.
+
+[//]: # ([![JavaScript Style Guide]&#40;https://img.shields.io/badge/code_style-standard-brightgreen.svg&#41;]&#40;https://standardjs.com&#41;)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/theZ3r0CooL/ho0ks)
+[![NPM](https://img.shields.io/npm/v/ho0ks.svg)](https://www.npmjs.com/package/ho0ks)
+![GitHub](https://img.shields.io/github/license/theZ3r0CooL/ho0ks)
+
+![GitHub Sponsors](https://img.shields.io/github/sponsors/theZ3r0CooL?logo=GitHub)
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/theZ3r0CooL)
+## Install
+
+```bash
+npm install --save ho0ks
+```
+
+## Usage
+
+```tsx
+import * as React from 'react'
+
+import { useMyHook } from 'ho0ks'
+
+const Example = () => {
+  const example = useMyHook()
+  return (
+    <div>
+      {example}
+    </div>
+  )
+}
+```
+
+## License
+
+Apache-2.0 © 
+
+## Contributors
+>### theZ3r0CooL
+>[GitHub](https://github.com/theZ3r0CooL)</br>
+>[Portfolio](https://theZ3r0CooL.github.io)
