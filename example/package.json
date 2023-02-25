@@ -6,15 +6,21 @@
   "licenses": [
     {
       "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
     "ho0ks": "file:.."
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1",
+    "@svgr/webpack": "^6.5.1"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,19 +1,10 @@
 # User-specific stuff
 .DS_Store
 .idea
-/node_modules/
+**/node_modules/
 
-# IntelliJ
-out/
+# Environment
+.env
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Crashlytics plugin
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
+# Build
+/dist
