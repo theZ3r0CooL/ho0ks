@@ -21,4 +21,4 @@ jobs:
       - name: Jest Code Coverage Badge
         uses: luk-schweizer/jest-code-coverage-badge-action@v1.0.1
         with:
-          test-command: cross-env CI=1 react-scripts test --env=jsdom --coverage
+          test-command: npm run test
