@@ -14,11 +14,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install Dependencies
+      - name: Install Dependencies and Build Rollup
         run: npm i
-      - name: Run Tests
-        run: npm run test
-      - name: Add & Commit
-        uses: EndBug/add-and-commit@v9.1.1
+#       - name: Run Tests
+#         run: npm run test
+      - name: Jest Code Coverage Badge
+        uses: luk-schweizer/jest-code-coverage-badge-action@v1.0.1
         with:
-          add: . --all
+          test-command: cross-env CI=1 react-scripts test --env=jsdom --coverage
