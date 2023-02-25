@@ -32,10 +32,11 @@
     "src"
   ],
   "exclude": [
-    "node_modules",
     "build",
+    "coverage",
     "dist",
     "example",
+    "node_modules",
     "rollup.config.mjs"
   ]
 }

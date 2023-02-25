@@ -6,5 +6,8 @@
 # Environment
 .env
 
+# Test
+/coverage
+
 # Build
 /dist
