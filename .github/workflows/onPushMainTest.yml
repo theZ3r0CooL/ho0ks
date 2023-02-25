@@ -17,4 +17,4 @@ jobs:
         with:
           packageManager: npm
       - name: Run Tests
-      - run: npm run test
+        run: npm run test
