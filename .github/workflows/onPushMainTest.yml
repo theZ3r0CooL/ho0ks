@@ -16,9 +16,5 @@ jobs:
           node-version: 18
       - name: Install Dependencies and Build Rollup
         run: npm i
-#       - name: Run Tests
-#         run: npm run test
-      - name: Jest Code Coverage Badge
-        uses: luk-schweizer/jest-code-coverage-badge-action@v1.0.1
-        with:
-          test-command: npm run test
+      - name: Run Tests
+        run: npm run test
