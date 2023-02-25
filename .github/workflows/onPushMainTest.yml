@@ -11,10 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Node using nvm
-        uses: dcodeIO/setup-node-nvm@v5
+        run: nvm use
       - name: Install Dependencies
-        uses: Jaid/action-npm-install@v1.2.4
-        with:
-          packageManager: npm
+        run: npm i
       - name: Run Tests
         run: npm run test
