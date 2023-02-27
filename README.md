@@ -2,7 +2,7 @@
 
 <hr style='border-top: 3px solid #bbb;'/>
 
-<div style='display: flex; flex-direction: column; place-content: center; place-items: center; text-align: center;'>
+<div align='center' style='display: flex; flex-direction: column; place-content: center; place-items: center; text-align: center;'>
 
 <img src='./assets/ho0ks-animated.svg' alt='Z3r0/' width='100%' height='auto' style='max-width: 20rem'/>
 <h3 style='width: 100%; margin: 0; text-align: center;'>A Library of useful React Hooks written in TypeScript.</h3>
