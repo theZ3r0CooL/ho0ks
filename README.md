@@ -9,12 +9,12 @@
 
 [//]: # ([![JavaScript Style Guide]&#40;https://img.shields.io/badge/code_style-standard-brightgreen.svg&#41;]&#40;https://standardjs.com&#41;)
 
-<a href=''>![GitHub package.json version](https://img.shields.io/github/package-json/v/theZ3r0CooL/ho0ks)</a>
-<a href=''>[![NPM](https://img.shields.io/npm/v/ho0ks.svg)](https://www.npmjs.com/package/ho0ks)</a>
-    ![GitHub](https://img.shields.io/github/license/theZ3r0CooL/ho0ks)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/theZ3r0CooL/ho0ks)
+[![NPM](https://img.shields.io/npm/v/ho0ks.svg)](https://www.npmjs.com/package/ho0ks)
+![GitHub](https://img.shields.io/github/license/theZ3r0CooL/ho0ks)
 
-<a href=''>![GitHub Sponsors](https://img.shields.io/github/sponsors/theZ3r0CooL?logo=GitHub)</a>
-<a href=''>[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/theZ3r0CooL)</a>
+![GitHub Sponsors](https://img.shields.io/github/sponsors/theZ3r0CooL?logo=GitHub)
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/theZ3r0CooL)
 
 </div>
 
