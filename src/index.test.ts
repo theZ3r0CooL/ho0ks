@@ -1,5 +1,6 @@
-import { useRandomItem } from './index';
 import { renderHook, act } from "@testing-library/react";
+
+import { useRandomItem, useTrackLimit } from './index';
 
 // mock timer using jest
 jest.useFakeTimers();
@@ -102,5 +103,58 @@ describe('useRandomItem', () => {
     // Check after total 2 sec
     expect(testArray).toContain(result.current);
     expect(result.current).not.toBe(prevResult);
+  });
+});
+
+describe('useTrackLimit', () => {
+
+  it('accepts Array of numbers', () => {
+    const initialValues = Array.from(Array(99000).keys());
+    const { result } = renderHook(() => useTrackLimit({ initialValues }));
+
+    expect(result.current.limits).toEqual({
+      top: Math.max.apply(null, initialValues),
+      bottom: Math.min.apply(null, initialValues)
+    });
+  });
+
+  it('accepts Set of numbers', () => {
+    const initialValues = Array.from(Array(99000).keys());
+    const numberSet = new Set(initialValues);
+    const { result } = renderHook(() => useTrackLimit({ initialValues: numberSet }));
+
+    expect(result.current.limits).toEqual({
+      top: Math.max.apply(null, initialValues),
+      bottom: Math.min.apply(null, initialValues)
+    });
+  });
+
+  it('updates returned limits when given a new value larger or smaller than the current', () => {
+    // get new limits providing only two(2) for initialValues
+    const { result } = renderHook(() => useTrackLimit({ initialValues: 2 }));
+
+    // expect top and bottom limits to be two(2)
+    expect(result.current.limits).toEqual({ top: 2, bottom: 2 });
+
+    // add three(3) to the tracked values
+    act(() => {
+      result.current.addValue(3);
+    });
+    // expect top limit to now be three(3), but bottom to still be two(2)
+    expect(result.current.limits).toEqual({ top: 3, bottom: 2 });
+
+    // add one(1) to the tracked values
+    act(() => {
+      result.current.addValue(1);
+    });
+    // expect bottom limit to now be one(1), but top to still be three(3)
+    expect(result.current.limits).toEqual({ top: 3, bottom: 1 });
+
+    // add two(2) to the tracked values
+    act(() => {
+      result.current.addValue(2);
+    });
+    // expect bottom limit to still be one(1) and top to still be three(3)
+    expect(result.current.limits).toEqual({ top: 3, bottom: 1 });
   });
 });

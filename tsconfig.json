@@ -34,6 +34,7 @@
   "exclude": [
     "build",
     "coverage",
+    "docs",
     "dist",
     "example",
     "node_modules",

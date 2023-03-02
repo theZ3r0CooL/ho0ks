@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useRandomItem = ({ selection, interval }: RandomItem.Props) => {
+const useRandomItem = ({ selection, interval }: RandomItem.Props): RandomItem.Returns => {
 
     const [selectionArray, updateSelectionArray] = useState(Array.from(selection));
     if (selectionArray.length < 2) {
@@ -26,7 +26,7 @@ const useRandomItem = ({ selection, interval }: RandomItem.Props) => {
         return () => clearInterval(intervalId);
     }, [selectionArray, interval]);
 
-    return randomItem;
+    return { randomItem };
 };
 
 export default useRandomItem;

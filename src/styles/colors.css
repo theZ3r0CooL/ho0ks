@@ -1,0 +1,84 @@
+:root {
+    /** Root Style Vars */
+    /** Scheme Independent Color Styles  */
+
+    /* colors */
+    --color-primary-light: #82e6f1;
+    --color-primary: #00DBEF;
+    --color-primary-dark: #007e8a;
+    --color-secondary-light: #ff73be;
+    --color-secondary: #DF4598;
+    --color-secondary-dark: #782551;
+
+    --color-cyan: #00BBBB;
+    --color-cyan-dark: #005454;
+    --color-green: #29a37c;
+    --color-yellow: #c9e034;
+    --color-orange: #f27b44;
+    --color-red: #e03f3f;
+
+    /* greyscale */
+    --color-white-bright: #FAFAFA;
+    --color-white: #F2F2F2;
+    --color-grey-light: #E6E6E6;
+    --color-grey: #969696;
+    --color-grey-semi-dark: #757575;
+    --color-grey-dark: #535353;
+    --color-grey-black: #232323;
+
+    /** Scheme Independent Color Styles  */
+
+    /* scheme colors  */
+    --color-btn-active: var(--color-primary);
+    --color-btn-inactive: var(--color-primary-dark);
+    --color-input-hint: #A9A9A9;
+    --color-a-text: var(--color-secondary);
+    --color-span-text: var(--color-grey);
+    --color-li-text: var(--color-grey);
+
+    /** Scheme Dependent Color Styles  */
+
+    /* dark scheme colors */
+    --color-list-bg: rgba(250, 250, 250, 0.65);
+    --color-group-bg: var(--color-grey-light);
+    --color-group-div: var(--color-secondary-dark);
+    --color-code-bg: var(--color-grey-dark);
+    --color-code-text: var(--color-grey-light);
+    --color-a-hover-text: var(--color-primary-dark);
+    --color-a-active-text: var(--color-primary-light);
+    --color-a-visited-text: var(--color-primary-light);
+    --color-p-text: var(--color-primary);
+
+    /* dark scheme greyscale */
+    --color-transparent-50: rgba(255, 255, 255, 0.50);
+    --color-transparent-40: rgba(255, 255, 255, 0.40);
+    --color-transparent-35: rgba(255, 255, 255, 0.35);
+    --color-transparent-30: rgba(255, 255, 255, 0.30);
+    --color-transparent-20: rgba(255, 255, 255, 0.20);
+    --color-transparent-10: rgba(255, 255, 255, 0.10);
+    --color-bg-tint: #00000050;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* light scheme colors */
+        --color-list-bg: rgba(36, 36, 36, 0.65);
+        --color-group-bg: var(--color-grey-semi-dark);
+        --color-group-div: var(--color-secondary-light);
+        --color-code-bg: var(--color-grey-light);
+        --color-code-text: var(--color-grey-dark);
+        --color-a-hover-text: var(--color-primary-light);
+        --color-a-active-text: var(--color-primary-dark);
+        --color-a-visited-text: var(--color-primary-dark);
+        --color-p-text: var(--color-primary-dark);
+
+        /* light scheme greyscale */
+        --color-transparent-50: rgba(0, 0, 0, 0.50);
+        --color-transparent-40: rgba(0, 0, 0, 0.40);
+        --color-transparent-35: rgba(0, 0, 0, 0.35);
+        --color-transparent-30: rgba(0, 0, 0, 0.30);
+        --color-transparent-20: rgba(0, 0, 0, 0.20);
+        --color-transparent-10: rgba(0, 0, 0, 0.10);
+        --color-bg-tint: #FFFFFF50;
+    }
+}
