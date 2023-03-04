@@ -43,7 +43,7 @@ describe('useRandomItem', () => {
       interval: 1000
     }));
 
-    expect(numberArray).toContain(numberResult.current);
+    expect(numberArray).toContain(numberResult.current.randomItem);
 
     const stringArray = ['0', '1'];
     const { result: stringResult } = renderHook(() => useRandomItem({
@@ -51,7 +51,7 @@ describe('useRandomItem', () => {
       interval: 1000
     }));
 
-    expect(stringArray).toContain(stringResult.current);
+    expect(stringArray).toContain(stringResult.current.randomItem);
   });
 
   it('accepts Set of items of any type', () => {
@@ -61,7 +61,7 @@ describe('useRandomItem', () => {
       interval: 1000
     }));
 
-    expect(numberSet).toContain(numberResult.current);
+    expect(numberSet).toContain(numberResult.current.randomItem);
 
     const stringSet = new Set(['0', '1']);
     const { result: stringResult } = renderHook(() => useRandomItem({
@@ -69,7 +69,7 @@ describe('useRandomItem', () => {
       interval: 1000
     }));
 
-    expect(stringSet).toContain(stringResult.current);
+    expect(stringSet).toContain(stringResult.current.randomItem);
   });
 
   it('updates returned value every set interval with a value different than the last', () => {
@@ -82,7 +82,7 @@ describe('useRandomItem', () => {
     }));
 
     // Store prevResult to ensure the next changes
-    let prevResult = result.current;
+    let prevResult = result.current.randomItem;
     expect(testArray).toContain(prevResult);
 
     // Fast-forward 1sec
@@ -91,8 +91,8 @@ describe('useRandomItem', () => {
     });
 
     // Check after total 1 sec
-    expect(result.current).not.toBe(prevResult);
-    prevResult = result.current;
+    expect(result.current.randomItem).not.toBe(prevResult);
+    prevResult = result.current.randomItem;
     expect(testArray).toContain(prevResult);
 
     // Fast-forward 1 more sec
@@ -101,8 +101,8 @@ describe('useRandomItem', () => {
     });
 
     // Check after total 2 sec
-    expect(testArray).toContain(result.current);
-    expect(result.current).not.toBe(prevResult);
+    expect(testArray).toContain(result.current.randomItem);
+    expect(result.current.randomItem).not.toBe(prevResult);
   });
 });
 
