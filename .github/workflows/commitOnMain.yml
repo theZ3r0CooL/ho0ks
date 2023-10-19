@@ -1,11 +1,11 @@
-name: Test and Generate Coverage on Push
+name: Commit on Main
 
 on:
   push:
     branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
