@@ -1,0 +1,8 @@
+{
+  "short_name": "ho0ks",
+  "name": "Example ho0ks",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

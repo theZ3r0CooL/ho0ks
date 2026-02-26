@@ -1,0 +1,82 @@
+@import 'colors.css';
+
+/* style all header links font to match the one using fontawesome for icons */
+div[class='tsd-toolbar-links'] > a {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* use fontawesome to give any header link with github in the href a proper icon */
+div[class='tsd-toolbar-links'] > a[href*="github"] {
+    font-family: "Font Awesome 5 Free", sans-serif; font-weight: 900; content: "\f007";
+}
+
+/*li[class='current'] ul li:hover ~ li {
+    opacity: 0.5;
+}*/
+
+li[class='current'] ul li {
+    transition: opacity 220ms ease-out;
+}
+
+li[class='current'] ul:hover li {
+    opacity: 0.5;
+}
+
+li[class='current'] ul li:hover {
+    opacity: 1;
+}
+
+.tsd-anchor-link > code {
+    color: var(--color-code-text);
+    background-color: var(--color-code-bg);
+    font: 1rem Consolas, monospace;
+}
+
+.tsd-anchor-link > span {
+    color: var(--color-span-text);
+}
+
+.tsd-comment > H3 {
+    font-size: medium;
+    color: var(--color-transparent-35);
+}
+
+.tsd-comment > p {
+    color: var(--color-p-text);
+}
+
+.tsd-comment > p ~ p {
+    color: var(--color-secondary-light);
+}
+
+.tsd-sources li {
+    color: var(--color-li-text);
+}
+
+.tsd-signature a,
+.tsd-type-declaration a,
+.tsd-sources a {
+    color: var(--color-a-text) !important;
+}
+
+.tsd-signature a:hover,
+.tsd-type-declaration a:hover,
+.tsd-sources a:hover {
+    color: var(--color-a-hover-text) !important;
+}
+
+.tsd-signature a:active,
+.tsd-type-declaration a:active,
+.tsd-sources a:active {
+    color: var(--color-a-active-text) !important;
+}
+
+.tsd-signature a:visited,
+.tsd-type-declaration a:visited,
+.tsd-sources a:visited {
+    color: var(--color-a-visited-text) !important;
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/ho0ks/example/static/css/main.31d6cfe0.css",
+    "main.js": "/ho0ks/example/static/js/main.4de7b067.js",
+    "index.html": "/ho0ks/example/index.html",
+    "main.4de7b067.js.map": "/ho0ks/example/static/js/main.4de7b067.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.4de7b067.js"
+  ]
+}

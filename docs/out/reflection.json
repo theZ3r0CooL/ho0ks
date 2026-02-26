@@ -1,0 +1,917 @@
+{
+	"id": 0,
+	"name": "ho0ks - v1.0.0",
+	"kind": 1,
+	"flags": {},
+	"originalName": "ho0ks",
+	"children": [
+		{
+			"id": 1,
+			"name": "src/@types",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "RandomItem",
+					"kind": 4,
+					"kindString": "Namespace",
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "Selection",
+							"kind": 4194304,
+							"kindString": "Type alias",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "An object holding a collection of items to choose from"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 4,
+									"character": 9,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L4"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 6,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "tuple",
+										"elements": [
+											{
+												"type": "reference",
+												"id": 6,
+												"name": "T"
+											},
+											{
+												"type": "reference",
+												"id": 6,
+												"name": "T"
+											},
+											{
+												"type": "rest",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"id": 6,
+														"name": "T"
+													}
+												}
+											}
+										]
+									},
+									{
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 6,
+														"name": "T"
+													}
+												],
+												"name": "Set",
+												"externalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+												"qualifiedName": "Set",
+												"package": "typescript"
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 4,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"children": [
+														{
+															"id": 5,
+															"name": "size",
+															"kind": 1024,
+															"kindString": "Property",
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/@types/index.d.ts",
+																	"line": 4,
+																	"character": 52,
+																	"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L4"
+																}
+															],
+															"type": {
+																"type": "union",
+																"types": [
+																	{
+																		"type": "literal",
+																		"value": 2
+																	},
+																	{
+																		"type": "reference",
+																		"name": "greater"
+																	}
+																]
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																5
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/@types/index.d.ts",
+															"line": 4,
+															"character": 50,
+															"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L4"
+														}
+													]
+												}
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"id": 7,
+							"name": "Props",
+							"kind": 256,
+							"kindString": "Interface",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The parameters passed to "
+									},
+									{
+										"kind": "code",
+										"text": "`useRandomItem`"
+									}
+								]
+							},
+							"children": [
+								{
+									"id": 8,
+									"name": "selection",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The collection of items to choose from"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 9,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L9"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 9,
+									"name": "interval",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The amount of time in mS to update the current selection"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 11,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L11"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										8,
+										9
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 7,
+									"character": 14,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L7"
+								}
+							]
+						},
+						{
+							"id": 10,
+							"name": "Returns",
+							"kind": 256,
+							"kindString": "Interface",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The return value of "
+									},
+									{
+										"kind": "code",
+										"text": "`useRandomItem`"
+									}
+								]
+							},
+							"children": [
+								{
+									"id": 11,
+									"name": "randomItem",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The current random selection from the provided collection"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 17,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L17"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "T"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										11
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 15,
+									"character": 14,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L15"
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Type Aliases",
+							"children": [
+								3
+							]
+						},
+						{
+							"title": "Interfaces",
+							"children": [
+								7,
+								10
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/@types/index.d.ts",
+							"line": 1,
+							"character": 10,
+							"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 12,
+					"name": "TrackLimit",
+					"kind": 4,
+					"kindString": "Namespace",
+					"flags": {},
+					"children": [
+						{
+							"id": 13,
+							"name": "Limits",
+							"kind": 4194304,
+							"kindString": "Type alias",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "An object holding two numbers"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 24,
+									"character": 9,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L24"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 14,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 15,
+											"name": "top",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The largest value"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/@types/index.d.ts",
+													"line": 26,
+													"character": 8,
+													"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L26"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 16,
+											"name": "bottom",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The smallest value"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/@types/index.d.ts",
+													"line": 28,
+													"character": 8,
+													"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L28"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												15,
+												16
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 24,
+											"character": 18,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L24"
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 17,
+							"name": "AddValueCallback",
+							"kind": 4194304,
+							"kindString": "Type alias",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 32,
+									"character": 9,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L32"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 18,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 32,
+											"character": 28,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L32"
+										}
+									],
+									"signatures": [
+										{
+											"id": 19,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Callback to add more numbers to the sample"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 20,
+													"name": "newValue",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 21,
+							"name": "Props",
+							"kind": 256,
+							"kindString": "Interface",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The parameters passed to "
+									},
+									{
+										"kind": "code",
+										"text": "`useTrackLimit`"
+									}
+								]
+							},
+							"children": [
+								{
+									"id": 22,
+									"name": "initialValues",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The initial sample of number(s)"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@defaultValue",
+												"content": [
+													{
+														"kind": "text",
+														"text": "0"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 40,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L40"
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "number"
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "number"
+												}
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "number"
+													}
+												],
+												"name": "Set",
+												"externalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+												"qualifiedName": "Set",
+												"package": "typescript"
+											}
+										]
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										22
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 35,
+									"character": 14,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L35"
+								}
+							]
+						},
+						{
+							"id": 23,
+							"name": "Returns",
+							"kind": 256,
+							"kindString": "Interface",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The return value of "
+									},
+									{
+										"kind": "code",
+										"text": "`useTrackLimit`"
+									}
+								]
+							},
+							"children": [
+								{
+									"id": 24,
+									"name": "limits",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The most recent largest ("
+											},
+											{
+												"kind": "code",
+												"text": "`top`"
+											},
+											{
+												"kind": "text",
+												"text": ") and smallest ("
+											},
+											{
+												"kind": "code",
+												"text": "`bottom`"
+											},
+											{
+												"kind": "text",
+												"text": ") numbers to be added"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 46,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L46"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 13,
+										"name": "Limits"
+									}
+								},
+								{
+									"id": 25,
+									"name": "addValue",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Callback to add more numbers to the sample"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/@types/index.d.ts",
+											"line": 48,
+											"character": 8,
+											"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L48"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "AddValueCallback"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										24,
+										25
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/@types/index.d.ts",
+									"line": 44,
+									"character": 14,
+									"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L44"
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Type Aliases",
+							"children": [
+								13,
+								17
+							]
+						},
+						{
+							"title": "Interfaces",
+							"children": [
+								21,
+								23
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/@types/index.d.ts",
+							"line": 21,
+							"character": 10,
+							"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/@types/index.d.ts#L21"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						2,
+						12
+					]
+				}
+			]
+		},
+		{
+			"id": 26,
+			"name": "src/useRandomItem/useRandomItem",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 27,
+					"name": "default",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/useRandomItem/useRandomItem.tsx",
+							"line": 3,
+							"character": 6,
+							"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/useRandomItem/useRandomItem.tsx#L3"
+						}
+					],
+					"signatures": [
+						{
+							"id": 28,
+							"name": "default",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 29,
+									"name": "__namedParameters",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 7,
+										"name": "Props"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 10,
+								"name": "Returns"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						27
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/useRandomItem/useRandomItem.tsx",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/useRandomItem/useRandomItem.tsx#L1"
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "src/useTrackLimit/useTrackLimit",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 31,
+					"name": "default",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/useTrackLimit/useTrackLimit.tsx",
+							"line": 3,
+							"character": 6,
+							"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/useTrackLimit/useTrackLimit.tsx#L3"
+						}
+					],
+					"signatures": [
+						{
+							"id": 32,
+							"name": "default",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 33,
+									"name": "__namedParameters",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 21,
+										"name": "Props"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 23,
+								"name": "Returns"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						31
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/useTrackLimit/useTrackLimit.tsx",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/theZ3r0CooL/ho0ks/blob/6462dc0/src/useTrackLimit/useTrackLimit.tsx#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				1,
+				26,
+				30
+			]
+		}
+	]
+}
