@@ -4,7 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY . .
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 EXPOSE 3000
 
