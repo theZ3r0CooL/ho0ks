@@ -1,5 +1,5 @@
 language: node_js
 node_js:
-  - 18
+  - "20.20.0"
 env:
   - SKIP_PREFLIGHT_CHECK=true
