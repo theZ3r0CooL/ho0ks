@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 20.20.0
       - name: Install Dependencies and Build Rollup
-        run: npm i
+        run: npm ci --legacy-peer-deps
       - name: Run Tests
         run: npm run test
