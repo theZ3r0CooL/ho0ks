@@ -1,6 +1,6 @@
 {
   "name": "ho0ks",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Library of useful React Hooks written in TypeScript.",
   "author": "theZ3r0CooL (https://github.com/sponsors/theZ3r0CooL)",
   "license": "Apache-2.0",
