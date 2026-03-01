@@ -72,7 +72,7 @@ describe('useRandomItem', () => {
     expect(stringSet).toContain(stringResult.current.randomItem);
   });
 
-  it('updates returned value every set interval with a value different than the last', () => {
+  it('updates returned value every set interval with a value different from the last', () => {
 
     // Using min length to test the current is not the next
     const testArray = [0, 1];
@@ -107,6 +107,15 @@ describe('useRandomItem', () => {
 });
 
 describe('useTrackLimit', () => {
+
+  it('accepts empty initial values', () => {
+    const { result } = renderHook(() => useTrackLimit({}));
+
+    expect(result.current.limits).toEqual({
+      top: 0,
+      bottom: 0
+    });
+  });
 
   it('accepts Array of numbers', () => {
     const initialValues = Array.from(Array(99000).keys());
